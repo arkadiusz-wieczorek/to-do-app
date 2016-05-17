@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TO DO LIST APP</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="all" />
+    <link href="styles/fonts.css" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+        <!-- input view for add task -->
+            <div id="inputView">
+                <input type="text" id="new_task"><button id="add_task"> Add new task </button>
+            </div>
+
+        <!-- list view for show tasks -->
+            <div class="tasks-list" id="listView">
+            </div>
+
+        <!-- footer view for count tasks -->
+            <div class="footer" id="footerView">
+                <span class="el-left" id="count-all-tasks">All tasks: 0</span>
+                <span class="el-right" id="count-active-tasks">Active tasks: 0</span>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/lib/ee.js"></script>
+    <script src="./scripts/lib/utils.js"></script>
+    <script src="./scripts/lib/store.js"></script>
+    <script src="./scripts/views/inputView.js"></script>
+    <script src="./scripts/views/listView.js"></script>
+    <script src="./scripts/views/footerView.js"></script>
+    <script src="./scripts/controlers/inputCtrl.js"></script>
+    <script src="./scripts/controlers/listCtrl.js"></script>
+    <script src="./scripts/controlers/footerCtrl.js"></script>
+    <script src="./scripts/app.js"></script>
+</body>
+
+</html>
+
+
